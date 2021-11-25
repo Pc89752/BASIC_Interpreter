@@ -8,6 +8,9 @@ import java.util.Scanner;
 
 import java.util.Map;
 import java.util.Map.Entry;
+
+import BASIC_Interpreter.Variables.Storage;
+
 import java.util.HashMap;
 
 import java.util.ArrayList;
@@ -44,6 +47,7 @@ public class ReadCode {
         while (entryPoint != -1) {
             entryPoint = readLine(BASICList, entryPoint);
         }
+        Storage.clear();
     }
 
     private static int readLine(List<Entry<Integer, String>> BASICList, int entryPoint) {

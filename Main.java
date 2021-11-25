@@ -7,7 +7,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         do {
             ReadCode.readFile();
-            System.out.print("Continue? (Y):");
+            System.out.print(
+                "\n\n********************************\n"+
+                "Program ended\n"+
+                "Continue? (Y):");
         } while (sc.nextLine().toLowerCase().equals("y"));
         sc.close();
     }
